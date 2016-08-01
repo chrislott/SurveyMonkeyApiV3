@@ -12,6 +12,23 @@ namespace SurveyMonkeyApiV3.Tests
     public class UnitTest1
     {
         [TestMethod]
+        public async Task TestAPIErrorHandling()
+        {
+            SurveyMonkey.AuthToken = "blahblah";
+            SurveyMonkey.ApiKey = ConfigurationManager.AppSettings["SurveyMonkeyApiKey"];
+
+            try
+            {
+                List<Survey> surveys = await Surveys.GetSurveys();
+            }
+            catch
+            {
+                return;
+            }
+
+            Assert.Fail("No exception thrown on API error");
+        }
+        [TestMethod]
         public async Task TestGetSurveys()
         {
             SurveyMonkey.AuthToken = ConfigurationManager.AppSettings["SurveyMonkeyAuthToken"];

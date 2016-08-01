@@ -27,6 +27,7 @@ namespace SurveyMonkeyApiV3.Networking
 
         private static async Task<T> DeserializeServerResponse<T>(HttpResponseMessage response)
         {
+            response.EnsureSuccessStatusCode();
             string responseStr = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<T>(responseStr);
         }
