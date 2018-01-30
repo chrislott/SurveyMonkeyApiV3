@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SurveyMonkeyApiV3.Models
+namespace SurveyMonkeyApiV3Standard.Models
 {
     public class Member
     {

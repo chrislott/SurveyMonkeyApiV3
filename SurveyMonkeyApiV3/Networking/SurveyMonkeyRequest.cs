@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks; 
 using Newtonsoft.Json;
-using SurveyMonkeyApiV3.Helpers;
+using SurveyMonkeyApiV3Standard.Helpers;
 
-namespace SurveyMonkeyApiV3.Networking
+namespace SurveyMonkeyApiV3Standard.Networking
 {
     public class SurveyMonkeyRequest
     {

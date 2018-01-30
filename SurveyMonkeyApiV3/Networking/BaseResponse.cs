@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SurveyMonkeyApiV3.Networking
+namespace SurveyMonkeyApiV3Standard.Networking
 {
     public class BaseResponse<T>
     {

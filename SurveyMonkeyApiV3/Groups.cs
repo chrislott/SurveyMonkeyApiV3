@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SurveyMonkeyApiV3.Models; 
-using SurveyMonkeyApiV3.Networking;
+using SurveyMonkeyApiV3Standard.Models; 
+using SurveyMonkeyApiV3Standard.Networking;
 
-namespace SurveyMonkeyApiV3
+namespace SurveyMonkeyApiV3Standard
 {
     public class Groups
     {
